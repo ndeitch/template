@@ -1,0 +1,61 @@
+{
+  "functions": {
+    "source": ".",
+    "ignore": [
+      ".git",
+      ".firebase",
+      "node_modules",
+      "coverage",
+      "docker-compose.yml",
+      "Dockerfile",
+      "CHANGELOG.md",
+      "config",
+      "test",
+      "src",
+      ".editorconfig",
+      ".eslintrc",
+      ".firebaserc",
+      ".gitignore",
+      ".nvmrc",
+      "nest-cli.json",
+      "README.md",
+      ".release-it.js",
+      "tsconfig.build.json",
+      "tsconfig.json",
+      ".github"
+    ]
+  },
+  "hosting": {
+    "public": "dist",
+    "ignore": [
+      ".git",
+      ".firebase",
+      "node_modules",
+      "test",
+      "src",
+      "coverage",
+      "docker-compose.yml",
+      "Dockerfile",
+      "CHANGELOG.md",
+      "config",
+      ".editorconfig",
+      ".eslintignore",
+      ".eslintrc",
+      ".firebaserc",
+      ".gitignore",
+      ".nvmrc",
+      "nest-cli.json",
+      "README.md",
+      "release.config.js",
+      "tsconfig.build.json",
+      "tsconfig.json",
+      ".github"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "function": "template"
+      }
+    ]
+  }
+}

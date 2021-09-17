@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  mongodb:
+    environment:
+      - MONGO_INITDB_DATABASE=dev
+      - MONGO_INITDB_ROOT_USERNAME=dev_username
+      - MONGO_INITDB_ROOT_PASSWORD=dev_password
+    image: mongo:4.2.8
+    restart: always
+    ports:
+      - 27017:27017
+    command: mongod --setParameter notablescan=1
