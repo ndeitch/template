@@ -1,3 +1,5 @@
+### [0.0.2](https://github.com/ndeitch/template/compare/0.0.2-develop.0...0.0.2) (2021-09-17)
+
 ### 0.0.2-develop.0 (2021-09-17)
 
 
