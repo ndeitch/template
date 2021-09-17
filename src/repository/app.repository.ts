@@ -10,9 +10,7 @@ export class AppRepository {
   }
 
   async getHello(): Promise<string> {
-    const document = await this.collection.findOne({})
-
-    if (document) return document
+    await this.collection.findOne({})
 
     return 'Hello World!'
   }
